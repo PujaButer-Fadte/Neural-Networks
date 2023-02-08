@@ -14,10 +14,13 @@ class Data:
         self.targets = []  
 
     def generateVectors(self):
+        #self.vectors= []
         self.vectors.append(self.variance * np.random.randn(self.P,self.N)+self.mean)
+        #self.vectors = np.concatenate(self.variance * np.random.randn(self.P,self.N)+self.mean)
         #print(self.vectors)
 
     def generateTargets(self):
+        #self.targets = []
         self.targets = np.random.choice(self.classes, size=self.P)
         #print(self.targets)
 
