@@ -1,10 +1,7 @@
-# NN&CI Assignment 1
+# NN&CI Assignment 2
 
 To run the program, please use the command
 ```
-python .\scripts\assignment1.py
+python .\scripts\assignment2.py
 ```
-For larger sizes of training data, i.e. N = 100, 500, 1000, please run the following
-```
-python .\scripts\assignment1.py --system_sizes
-```
+
