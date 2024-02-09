@@ -24,6 +24,19 @@ class Data:
         self.targets = np.random.choice(self.classes, size=self.P)
         #print(self.targets)
 
+    def generateTargetsbyTeacher(self):
+        teacher = np.random.randn(self.N)
+        teacher = teacher / np.linalg.norm(teacher) * np.sqrt(self.N)
+        targets = []
+        #print(teacher)
+        for example in self.vectors[0]:
+            targets.append(np.sign(np.dot(teacher, example)))
+        self.targets = targets
+        return teacher
+
+
+
+
 
 
 

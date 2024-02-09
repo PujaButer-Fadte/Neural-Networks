@@ -52,7 +52,7 @@ if __name__ == "__main__":
     N = []
     alphas = []
     if args.system_sizes:
-        N = [100, 500, 5000]
+        N = [100, 500, 1000]
         #alphas = np.arange(1.5, 2.5, 0.125)        
     else:
         N = [20, 40]
